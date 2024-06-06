@@ -94,10 +94,6 @@ std::string inputPlayerName()
     indentY++;
     gotoxy(indentX, indentY);
     std::cout << convert.to_bytes(message) << name << std::endl;
-    for (int i = 0; i < 10; i++)
-    {
-        std::cout << std::endl;
-    }
     std::this_thread::sleep_for(std::chrono::seconds(1));
     return name;
 }
